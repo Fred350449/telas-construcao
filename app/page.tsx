@@ -65,12 +65,7 @@ export default function Page() {
     background: "white",
     padding: 6,
     objectFit: "contain",
-  }}
-
-            
-            <div>
-              <div style={{ fontWeight: 900, letterSpacing: 0.2 }}>
-                INOVA TÊXTIL
+ 
               </div>
               <div style={{ fontSize: 13, color: "#334155" }}>
                 Vassouras - RJ • Fabricação de telas
