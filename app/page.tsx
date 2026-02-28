@@ -8,9 +8,6 @@ export default function Page() {
     whatsappText
   )}`;
 
-  // Ajuste aqui se seu logo tiver outro nome no /public
-  const logoSrc = "/file.svg";
-
   return (
     <main
       style={{
@@ -24,14 +21,15 @@ export default function Page() {
       {/* TOP BAR */}
       <div
         style={{
-          background: "#0b1220",
+          background: "#0b5cff",
           color: "white",
           padding: "10px 16px",
           fontSize: 14,
           textAlign: "center",
         }}
       >
-        INOVA TÊXTIL • Vassouras-RJ • WhatsApp: <b>+55 32 99936-4422</b>
+        Fabricação de telas em Vassouras-RJ • Atendimento rápido no WhatsApp:
+        <b> +55 32 99936-4422</b>
       </div>
 
       {/* HEADER */}
@@ -46,7 +44,7 @@ export default function Page() {
       >
         <div
           style={{
-            maxWidth: 1120,
+            maxWidth: 1100,
             margin: "0 auto",
             padding: "14px 16px",
             display: "flex",
@@ -55,15 +53,15 @@ export default function Page() {
             gap: 16,
           }}
         >
-          {/* LOGO + TITULO */}
+          {/* LOGO + NOME (logo agora é a /1.JPG) */}
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <Image
-              src={logoSrc}
+              src="/1.JPG"
               alt="Logo Inova Têxtil"
               width={56}
               height={56}
               style={{
-                borderRadius: 14,
+                borderRadius: 12,
                 border: "1px solid #e5e7eb",
                 background: "white",
                 padding: 6,
@@ -80,22 +78,22 @@ export default function Page() {
             </div>
           </div>
 
-          {/* CTA */}
           <a
             href={whatsappLink}
             target="_blank"
+            rel="noreferrer"
             style={{
               background: "#0b5cff",
               color: "white",
               padding: "10px 14px",
-              borderRadius: 12,
+              borderRadius: 10,
               textDecoration: "none",
-              fontWeight: 900,
+              fontWeight: 800,
               boxShadow: "0 8px 20px rgba(11,92,255,0.18)",
               whiteSpace: "nowrap",
             }}
           >
-            Fazer orçamento no WhatsApp
+            Orçamento no WhatsApp
           </a>
         </div>
       </header>
@@ -104,7 +102,7 @@ export default function Page() {
       <section style={{ padding: "34px 16px" }}>
         <div
           style={{
-            maxWidth: 1120,
+            maxWidth: 1100,
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "1.1fr 0.9fr",
@@ -112,12 +110,11 @@ export default function Page() {
             alignItems: "stretch",
           }}
         >
-          {/* HERO LEFT */}
           <div
             style={{
               background: "white",
               border: "1px solid #e5e7eb",
-              borderRadius: 20,
+              borderRadius: 18,
               padding: 22,
               boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
             }}
@@ -129,7 +126,7 @@ export default function Page() {
                   color: "#0b5cff",
                   padding: "6px 10px",
                   borderRadius: 999,
-                  fontWeight: 900,
+                  fontWeight: 800,
                   fontSize: 12,
                 }}
               >
@@ -141,7 +138,7 @@ export default function Page() {
                   color: "#0f766e",
                   padding: "6px 10px",
                   borderRadius: 999,
-                  fontWeight: 900,
+                  fontWeight: 800,
                   fontSize: 12,
                 }}
               >
@@ -153,7 +150,7 @@ export default function Page() {
                   color: "#854d0e",
                   padding: "6px 10px",
                   borderRadius: 999,
-                  fontWeight: 900,
+                  fontWeight: 800,
                   fontSize: 12,
                 }}
               >
@@ -161,13 +158,7 @@ export default function Page() {
               </span>
             </div>
 
-            <h1
-              style={{
-                fontSize: 40,
-                lineHeight: 1.08,
-                margin: "14px 0 10px",
-              }}
-            >
+            <h1 style={{ fontSize: 38, lineHeight: 1.1, margin: "14px 0 10px" }}>
               Telas para Construção Civil com padrão de qualidade.
             </h1>
 
@@ -176,14 +167,7 @@ export default function Page() {
               com pronta entrega (quando em estoque) e produção sob demanda.
             </p>
 
-            <div
-              style={{
-                display: "flex",
-                gap: 10,
-                flexWrap: "wrap",
-                marginTop: 16,
-              }}
-            >
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 16 }}>
               <a
                 href="#produtos"
                 style={{
@@ -192,7 +176,7 @@ export default function Page() {
                   padding: "10px 14px",
                   borderRadius: 12,
                   textDecoration: "none",
-                  fontWeight: 900,
+                  fontWeight: 800,
                 }}
               >
                 Ver produtos e preços
@@ -205,7 +189,7 @@ export default function Page() {
                   padding: "10px 14px",
                   borderRadius: 12,
                   textDecoration: "none",
-                  fontWeight: 900,
+                  fontWeight: 800,
                   border: "1px solid #e5e7eb",
                 }}
               >
@@ -259,12 +243,12 @@ export default function Page() {
             </div>
           </div>
 
-          {/* HERO RIGHT - FOTOS */}
+          {/* FOTOS (produção real) - sem a logo aqui */}
           <div
             style={{
               background: "white",
               border: "1px solid #e5e7eb",
-              borderRadius: 20,
+              borderRadius: 18,
               padding: 14,
               boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
             }}
@@ -276,45 +260,38 @@ export default function Page() {
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 10 }}>
               <Image
                 src="/2.JPG"
-                alt="Tela sinaleira (produção)"
+                alt="Produção (foto 2)"
                 width={1200}
                 height={800}
                 style={{
                   width: "100%",
-                  height: 230,
+                  height: 210,
                   objectFit: "cover",
                   borderRadius: 14,
                 }}
               />
 
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  gap: 10,
-                }}
-              >
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                 <Image
-                  src="/1.JPG"
-                  alt="Telas embaladas"
-                  width={900}
-                  height={700}
+                  src="/3.JPG"
+                  alt="Produção (foto 3)"
+                  width={1200}
+                  height={800}
                   style={{
                     width: "100%",
-                    height: 150,
+                    height: 140,
                     objectFit: "cover",
                     borderRadius: 14,
                   }}
                 />
-
                 <Image
-                  src="/3.JPG"
-                  alt="Tela branca"
-                  width={900}
-                  height={700}
+                  src="/4.JPG"
+                  alt="Produção (foto 4)"
+                  width={1200}
+                  height={800}
                   style={{
                     width: "100%",
-                    height: 150,
+                    height: 140,
                     objectFit: "cover",
                     borderRadius: 14,
                   }}
@@ -323,7 +300,7 @@ export default function Page() {
             </div>
 
             <div style={{ fontSize: 13, color: "#475569", marginTop: 10 }}>
-              Tela Sinaleira (laranja e branco) — outras cores sob amostra.
+              Produção real — outras cores sob amostra.
             </div>
           </div>
         </div>
@@ -331,37 +308,24 @@ export default function Page() {
 
       {/* PRODUTOS */}
       <section id="produtos" style={{ padding: "0 16px 34px" }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <h2 style={{ fontSize: 28, margin: "0 0 8px" }}>Produtos e preços</h2>
           <p style={{ color: "#475569", marginTop: 0 }}>
             Para frete, prazo e volume, chame no WhatsApp.
           </p>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 16,
-            }}
-          >
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {/* TELA FACHADA */}
             <div
               style={{
                 background: "white",
                 border: "1px solid #e5e7eb",
-                borderRadius: 20,
+                borderRadius: 18,
                 padding: 18,
                 boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  gap: 10,
-                  alignItems: "center",
-                }}
-              >
+              <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
                 <h3 style={{ margin: 0 }}>Tela Fachada de Prédio</h3>
                 <span
                   style={{
@@ -377,7 +341,7 @@ export default function Page() {
                 </span>
               </div>
 
-              <div style={{ marginTop: 10 }}>
+              <div style={{ marginTop: 10, color: "#0f172a" }}>
                 <div>
                   <b>Medida:</b> 3m (larg) × 50m (comp) = <b>150 m²</b>
                 </div>
@@ -403,14 +367,14 @@ export default function Page() {
                   <b>(mínimo 100 rolos)</b>.
                 </div>
                 <div style={{ marginTop: 6 }}>
-                  <b>Estoque:</b> se tivermos em estoque, atendemos{" "}
-                  <b>qualquer quantidade</b>.
+                  <b>Estoque:</b> se tivermos em estoque, atendemos <b>qualquer quantidade</b>.
                 </div>
               </div>
 
               <a
                 href={whatsappLink}
                 target="_blank"
+                rel="noreferrer"
                 style={{
                   display: "inline-block",
                   marginTop: 14,
@@ -431,19 +395,12 @@ export default function Page() {
               style={{
                 background: "white",
                 border: "1px solid #e5e7eb",
-                borderRadius: 20,
+                borderRadius: 18,
                 padding: 18,
                 boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  gap: 10,
-                  alignItems: "center",
-                }}
-              >
+              <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
                 <h3 style={{ margin: 0 }}>Tela Sinaleira</h3>
                 <span
                   style={{
@@ -459,7 +416,7 @@ export default function Page() {
                 </span>
               </div>
 
-              <div style={{ marginTop: 10 }}>
+              <div style={{ marginTop: 10, color: "#0f172a" }}>
                 <div>
                   <b>Medida:</b> 1,2m × 50m = <b>60 m²</b>
                 </div>
@@ -482,14 +439,14 @@ export default function Page() {
                   <b>(mínimo 100 rolos por cor diferente)</b>.
                 </div>
                 <div style={{ marginTop: 6 }}>
-                  <b>Estoque:</b> se tivermos em estoque, atendemos{" "}
-                  <b>qualquer quantidade</b>.
+                  <b>Estoque:</b> se tivermos em estoque, atendemos <b>qualquer quantidade</b>.
                 </div>
               </div>
 
               <a
                 href={whatsappLink}
                 target="_blank"
+                rel="noreferrer"
                 style={{
                   display: "inline-block",
                   marginTop: 14,
@@ -512,11 +469,11 @@ export default function Page() {
       <section id="regras" style={{ padding: "0 16px 34px" }}>
         <div
           style={{
-            maxWidth: 1120,
+            maxWidth: 1100,
             margin: "0 auto",
             background: "white",
             border: "1px solid #e5e7eb",
-            borderRadius: 20,
+            borderRadius: 18,
             padding: 18,
             boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
           }}
@@ -524,17 +481,15 @@ export default function Page() {
           <h2 style={{ margin: 0 }}>Regras de cores e estoque</h2>
           <div style={{ color: "#334155", marginTop: 10, lineHeight: 1.6 }}>
             <p style={{ margin: 0 }}>
-              ✅ <b>Tela Sinaleira</b>: fazemos normalmente <b>laranja e branco</b>
-              , mas podemos fazer outra cor conforme amostra.{" "}
-              <b>(Mínimo 100 rolos por cor diferente)</b>
+              ✅ <b>Tela Sinaleira</b>: fazemos normalmente <b>laranja e branco</b>, mas podemos
+              fazer outra cor conforme amostra. <b>(Mínimo 100 rolos por cor diferente)</b>
             </p>
             <p style={{ margin: "10px 0 0" }}>
-              ✅ <b>Tela Fachada</b>: fazemos normalmente <b>branco</b>, mas podemos
-              fazer outra cor. <b>(Mínimo 100 rolos)</b>
+              ✅ <b>Tela Fachada</b>: fazemos normalmente <b>branco</b>, mas podemos fazer outra cor.
+              <b> (Mínimo 100 rolos)</b>
             </p>
             <p style={{ margin: "10px 0 0" }}>
-              ✅ <b>Se tivermos em estoque</b>, podemos atender{" "}
-              <b>qualquer quantidade</b>.
+              ✅ <b>Se tivermos em estoque</b>, podemos atender <b>qualquer quantidade</b>.
             </p>
           </div>
         </div>
@@ -544,7 +499,7 @@ export default function Page() {
       <section style={{ padding: "0 16px 40px" }}>
         <div
           style={{
-            maxWidth: 1120,
+            maxWidth: 1100,
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
@@ -555,7 +510,7 @@ export default function Page() {
             style={{
               background: "white",
               border: "1px solid #e5e7eb",
-              borderRadius: 20,
+              borderRadius: 18,
               padding: 18,
               boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
             }}
@@ -564,12 +519,13 @@ export default function Page() {
             <ol style={{ marginTop: 10, color: "#334155", lineHeight: 1.7 }}>
               <li>Chame no WhatsApp e diga qual produto (Fachada ou Sinaleira).</li>
               <li>Informe a quantidade e, se quiser, a cor (com amostra).</li>
-              <li>Eu respondo com prazo, frete e valor final.</li>
+              <li>Eu te respondo com prazo, frete e valor final.</li>
             </ol>
 
             <a
               href={whatsappLink}
               target="_blank"
+              rel="noreferrer"
               style={{
                 display: "inline-block",
                 marginTop: 10,
@@ -589,7 +545,7 @@ export default function Page() {
             style={{
               background: "white",
               border: "1px solid #e5e7eb",
-              borderRadius: 20,
+              borderRadius: 18,
               padding: 18,
               boxShadow: "0 10px 30px rgba(2,6,23,0.06)",
               overflow: "hidden",
@@ -597,13 +553,7 @@ export default function Page() {
           >
             <h2 style={{ margin: 0 }}>Localização</h2>
             <p style={{ marginTop: 8, color: "#475569" }}>Vassouras - RJ</p>
-            <div
-              style={{
-                borderRadius: 14,
-                overflow: "hidden",
-                border: "1px solid #e5e7eb",
-              }}
-            >
+            <div style={{ borderRadius: 14, overflow: "hidden", border: "1px solid #e5e7eb" }}>
               <iframe
                 title="Mapa Vassouras-RJ"
                 src="https://www.google.com/maps?q=Vassouras%20RJ&output=embed"
@@ -618,7 +568,7 @@ export default function Page() {
 
       {/* FOOTER */}
       <footer style={{ background: "#0b1220", color: "white", padding: "26px 16px" }}>
-        <div style={{ maxWidth: 1120, margin: "0 auto", textAlign: "center" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
           <div style={{ fontWeight: 900, fontSize: 16 }}>INOVA TÊXTIL</div>
           <div style={{ opacity: 0.9, marginTop: 6 }}>
             Vassouras - RJ • WhatsApp: <b>+55 32 99936-4422</b>
@@ -630,6 +580,7 @@ export default function Page() {
       <a
         href={whatsappLink}
         target="_blank"
+        rel="noreferrer"
         style={{
           position: "fixed",
           right: 18,
