@@ -308,17 +308,15 @@ export default function Page() {
                 />
 
                 <Image
-                 src="/4.JPG"
-  alt="Produção"
-  width={900}
-  height={700}
-  style={{
-    width: "100%",
-    height: 150,
-    objectFit: "cover",
-    borderRadius: 14,
-  }}
-/>
+                  src="/3.JPG"
+                  alt="Tela branca"
+                  width={900}
+                  height={700}
+                  style={{
+                    width: "100%",
+                    height: 150,
+                    objectFit: "cover",
+                    borderRadius: 14,
                   }}
                 />
               </div>
