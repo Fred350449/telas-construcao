@@ -54,20 +54,27 @@ export default function Page() {
           }}
         >
           {/* LOGO + NOME (logo agora é a /1.JPG) */}
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <Image
-              src="/1.JPG"
-              alt="Logo Inova Têxtil"
-              width={56}
-              height={56}
-              style={{
-                borderRadius: 12,
-                border: "1px solid #e5e7eb",
-                background: "white",
-                padding: 6,
-                objectFit: "contain",
-              }}
-            />
+          <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: 16,
+  }}
+>
+           <Image
+  src="/1.JPG"
+  alt="Logo Inova Têxtil"
+  width={90}
+  height={90}
+  style={{
+    borderRadius: 18,
+    background: "white",
+    padding: 14,
+    objectFit: "contain",
+    boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
+    border: "1px solid #f1f5f9",
+  }}
+/>
             <div>
               <div style={{ fontWeight: 900, letterSpacing: 0.2 }}>
                 INOVA TÊXTIL
