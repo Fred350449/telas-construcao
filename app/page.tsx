@@ -54,18 +54,16 @@ export default function Page() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-           <Image
-  src="/3.JPG"
-  alt="Logo Inova Têxtil"
-  width={70}
-  height={70}
-  style={{
-    borderRadius: 12,
-    border: "1px solid #e5e7eb",
-    background: "white",
-    padding: 6,
-    objectFit: "contain",
- 
+            <Image
+              src="/4.JPG"
+              alt="Inova Têxtil"
+              width={56}
+              height={56}
+              style={{ borderRadius: 12, border: "1px solid #e5e7eb" }}
+            />
+            <div>
+              <div style={{ fontWeight: 900, letterSpacing: 0.2 }}>
+                INOVA TÊXTIL
               </div>
               <div style={{ fontSize: 13, color: "#334155" }}>
                 Vassouras - RJ • Fabricação de telas
@@ -272,7 +270,7 @@ export default function Page() {
               </div>
             </div>
             <div style={{ fontSize: 13, color: "#475569", marginTop: 10 }}>
-              
+              *Imagens carregadas da pasta <b>/public</b> (1.JPG, 2.JPG, 3.JPG, 4.JPG)
             </div>
           </div>
         </div>
@@ -535,7 +533,7 @@ export default function Page() {
             Vassouras - RJ • WhatsApp: <b>+55 32 99936-4422</b>
           </div>
           <div style={{ opacity: 0.7, marginTop: 6, fontSize: 12 }}>
-            
+            Site hospedado na Vercel (funciona mesmo com o PC desligado).
           </div>
         </div>
       </footer>
