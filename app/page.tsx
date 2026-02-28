@@ -66,8 +66,8 @@ export default function Page() {
     padding: 6,
     objectFit: "contain",
   }}
-/>
-            />
+
+            
             <div>
               <div style={{ fontWeight: 900, letterSpacing: 0.2 }}>
                 INOVA TÊXTIL
