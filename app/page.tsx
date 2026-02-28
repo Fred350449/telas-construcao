@@ -270,7 +270,7 @@ export default function Page() {
               </div>
             </div>
             <div style={{ fontSize: 13, color: "#475569", marginTop: 10 }}>
-              *Imagens carregadas da pasta <b>/public</b> (1.JPG, 2.JPG, 3.JPG, 4.JPG)
+              
             </div>
           </div>
         </div>
@@ -533,7 +533,7 @@ export default function Page() {
             Vassouras - RJ • WhatsApp: <b>+55 32 99936-4422</b>
           </div>
           <div style={{ opacity: 0.7, marginTop: 6, fontSize: 12 }}>
-            Site hospedado na Vercel (funciona mesmo com o PC desligado).
+            
           </div>
         </div>
       </footer>
