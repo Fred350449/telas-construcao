@@ -54,18 +54,19 @@ export default function Page() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <Image
-              src="/4.JPG"
-              alt="Inova Têxtil"
-              width={56}
-              height={56}
-              style={{ borderRadius: 12, border: "1px solid #e5e7eb" }}
-            />
-            <div>
-              <div style={{ fontWeight: 900, letterSpacing: 0.2 }}>
-                INOVA TÊXTIL
-              </div>
-              <div style={{ fontSize: 13, color: "#334155" }}>
+           <Image
+  src="/3.JPG"
+  alt="Logo Inova Têxtil"
+  width={70}
+  height={70}
+  style={{
+    borderRadius: 12,
+    border: "1px solid #e5e7eb",
+    background: "white",
+    padding: 6,
+    objectFit: "contain",
+  }}
+/>
                 Vassouras - RJ • Fabricação de telas
               </div>
             </div>
